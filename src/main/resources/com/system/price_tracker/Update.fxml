@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1195.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.UpdateUserInformationController">
+   <left>
+      <VBox prefHeight="720.0" prefWidth="398.0" spacing="50.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="274.0" prefWidth="340.0" spacing="15.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/USER%20ICON.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="label_Username" text="Username">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="button_editProfile" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #4169E1; -fx-background-radius: 30;" text="Edit Profile" />
+               </children>
+            </VBox>
+            <VBox prefHeight="285.0" prefWidth="374.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/ProfilePic.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="22.0" prefWidth="139.0" text="Profile">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/Notification.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="18.0" prefWidth="142.0" text="Notification">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/Password.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="18.0" prefWidth="142.0" text="Password">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/Address.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="18.0" prefWidth="142.0" text="Address">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Huawei/IdeaProjects/java-fx-login/src/main/java/com/example/javafxlogin/PrivacyPolicy.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="18.0" prefWidth="142.0" text="Privacy Policy">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="740.0" prefWidth="746.0" spacing="40.0" style="-fx-background-color: #CCCCCC;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="802.0" text="              Profile Settings">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="230.0" prefWidth="801.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="91.0" prefWidth="260.0" text="Profile details : ">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="37.0" prefWidth="712.0" spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="87.0" prefWidth="228.0" text="New username">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="87.0" prefWidth="349.0">
+                           <children>
+                              <TextField fx:id="tf_newusername" alignment="TOP_LEFT" layoutX="14.0" layoutY="25.0" prefHeight="41.0" prefWidth="334.0" style="-fx-background-color: transparent; -fx-border-width: 0002; -fx-border-color: #000080;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="101.0" prefHeight="37.0" prefWidth="712.0" spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="87.0" prefWidth="228.0" text="New Password">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="87.0" prefWidth="355.0">
+                           <children>
+                              <TextField fx:id="tf_newpassword" alignment="TOP_LEFT" layoutX="14.0" layoutY="25.0" prefHeight="41.0" prefWidth="332.0" style="-fx-background-color: transparent; -fx-border-width: 0002; -fx-border-color: #000080;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button_saveChanges" alignment="CENTER" contentDisplay="CENTER" layoutX="378.0" layoutY="21.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #4169E1; -fx-background-radius: 30;" text="Save Changes">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

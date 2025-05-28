@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="676.0" maxWidth="1210.0" minHeight="676.0" minWidth="1210.0" prefHeight="676.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.price_tracker.barchar">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="1210.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="39.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/proMaxIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="121.0" layoutY="21.0" text="ProMax">
+               <font>
+                  <Font name="Poor Richard" size="31.0" />
+               </font>
+            </Label>
+            <Line endX="47.4000244140625" endY="38.600013732910156" layoutX="939.0" layoutY="25.0" startX="47.4000244140625" startY="5.7220458984375E-6" stroke="#818181" />
+            <MenuButton fx:id="username" alignment="CENTER_RIGHT" contentDisplay="BOTTOM" layoutX="1010.0" layoutY="12.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF;" text="USERNAME">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#c_username" text="Change Username" />
+                  <MenuItem mnemonicParsing="false" onAction="#c_email" text="Change Email" />
+                  <MenuItem mnemonicParsing="false" onAction="#c_passowrd" text="Change Password" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+               </items>
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </MenuButton>
+            <Button layoutX="919.0" layoutY="18.0" mnemonicParsing="false" onAction="#switchToShoppingCart" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF;">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="42.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/cartIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Label fx:id="item" layoutX="137.0" layoutY="103.0" prefHeight="51.0" prefWidth="1036" text="item">
+         <font>
+            <Font name="Copperplate Gothic Light" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="870.199951171875" endY="3.0517578125E-5" layoutX="323.0" layoutY="174.0" startX="-232.2000274658203" startY="3.0517578125E-5" stroke="#969696" />
+      <Button layoutX="24.0" layoutY="97.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <BarChart fx:id="barchar" layoutX="45.0" layoutY="190.0" prefHeight="446.0" prefWidth="807.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <AnchorPane layoutX="896.0" layoutY="181.0" minHeight="0.0" minWidth="0.0" prefHeight="463.0" prefWidth="289.0" style="-fx-background-radius: 15; -fx-background-color: #E8E8E8;">
+         <children>
+            <Label layoutX="20.0" layoutY="84.0" prefHeight="36.0" prefWidth="119.0" text="Year: ">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="24.0" prefHeight="51.0" prefWidth="266.0" text="Please choose">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="147.0" prefHeight="36.0" prefWidth="119.0" text="Month :">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="95.0" layoutY="199.0" mnemonicParsing="false" onAction="#action_submit" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #1e3706; -fx-background-radius: 15;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="years_choose" layoutX="107.0" layoutY="88.0" onAction="#changeYears" prefWidth="150.0" />
+            <ChoiceBox fx:id="month_choose" layoutX="107.0" layoutY="147.0" prefWidth="150.0" />
+            <ProgressBar fx:id="loading" layoutX="20.0" layoutY="274.0" prefHeight="36.0" prefWidth="247.0" progress="0.0" />
+            <Label fx:id="pen_number" alignment="CENTER" layoutX="19.0" layoutY="310.0" prefHeight="18.0" prefWidth="247.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
